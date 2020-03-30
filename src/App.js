@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./HOC/Header";
+import List from "./Components/List";
+import Button from '@material-ui/core/Button'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App" style={{ fontSize: "22px" }}>
+      <Header className="header" />
+      <List/>
+      <Button variant="contained" color="secondary" style={{marginTop:'5px', marginRight:'5px',float:'right'}}>
+        글쓰기
+      </Button>
+
+      </div>
   );
 }
 
